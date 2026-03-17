@@ -1,0 +1,147 @@
+/* ══════════════════════════════════════
+   pricing.css — Clippr
+   Cards de planos: Básico, Pro, Empresarial
+══════════════════════════════════════ */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 980px;
+}
+
+.price-card {
+  border: 1.5px solid var(--mist);
+  border-radius: var(--r-lg);
+  padding: 40px 36px;
+  background: var(--white);
+  transition: all var(--transition-base);
+  position: relative;
+}
+.price-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.price-card.featured {
+  background: var(--ink);
+  border-color: var(--ink);
+  transform: translateY(-12px);
+  box-shadow: var(--shadow-lg);
+}
+.price-card.featured:hover {
+  transform: translateY(-16px);
+}
+
+/* Badge "Mais escolhido" */
+.price-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 16px;
+  border-radius: var(--r-full);
+  white-space: nowrap;
+}
+
+/* Tier label */
+.price-tier {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 20px;
+}
+.price-card.featured .price-tier { color: rgba(255,255,255,.45); }
+
+/* Valor */
+.price-amount {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: -2px;
+  line-height: 1;
+}
+.price-card.featured .price-amount { color: var(--white); }
+
+.price-currency {
+  font-size: 22px;
+  font-weight: 700;
+  vertical-align: super;
+  letter-spacing: 0;
+}
+
+.price-period {
+  font-size: 13px;
+  color: var(--slate);
+  margin-top: 6px;
+  margin-bottom: 28px;
+}
+.price-card.featured .price-period { color: rgba(255,255,255,.4); }
+
+/* Divisor */
+.price-divider {
+  border: none;
+  border-top: 1px solid var(--mist);
+  margin: 0 0 24px;
+}
+.price-card.featured .price-divider { border-color: rgba(255,255,255,.12); }
+
+/* Lista de features */
+.price-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+.price-features li {
+  font-size: 13px;
+  color: var(--slate);
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+.price-card.featured .price-features li { color: rgba(255,255,255,.65); }
+
+.price-features .check { color: var(--gold); font-size: 14px; flex-shrink: 0; font-weight: 700; }
+.price-features .cross { color: var(--mist); font-size: 14px; flex-shrink: 0; }
+
+/* Botão de plano */
+.btn-price {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--r-sm);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: 1.5px solid var(--mist);
+  background: transparent;
+  color: var(--ink);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.btn-price:hover { border-color: var(--ink); }
+
+.btn-price.featured-btn {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+  box-shadow: 0 4px 20px rgba(200,146,42,.4);
+}
+.btn-price.featured-btn:hover {
+  background: #B5821F;
+  border-color: #B5821F;
+}

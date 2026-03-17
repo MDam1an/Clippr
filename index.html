@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clippr — Gestão inteligente para barbearias. Agendamentos, clientes, financeiro e insights num só lugar." />
+  <title>Clippr — Gestão Inteligente para Barbearias</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/strips.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/preview.css" />
+  <link rel="stylesheet" href="css/pricing.css" />
+  <link rel="stylesheet" href="css/faq.css" />
+  <link rel="stylesheet" href="css/cta.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/whatsapp.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ══ BOTÃO FLUTUANTE WHATSAPP ══ -->
+  <a
+    href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20Clippr%20para%20minha%20barbearia."
+    target="_blank"
+    rel="noopener"
+    class="wa-float"
+    aria-label="Fale conosco no WhatsApp"
+  >💬</a>
+
+  <!-- ══ NAVEGAÇÃO ══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo">Clip<span>pr</span><sup>beta</sup></div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#preview">Como funciona</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <a
+        href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20Clippr."
+        target="_blank"
+        rel="noopener"
+        class="nav-cta"
+      >💬 Falar no WhatsApp</a>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        Gestão para barbearias
+      </div>
+      <h1>
+        Chega de<br>
+        bagunça na<br>
+        <em>sua</em> <span class="underline-word">barbearia.</span>
+      </h1>
+      <p class="hero-sub">
+        O Clippr organiza seus agendamentos, clientes, caixa e relatórios num painel simples e bonito — feito para o barbeiro brasileiro que quer crescer de verdade.
+      </p>
+      <div class="hero-actions">
+        <a
+          href="https://wa.me/5511999999999?text=Quero%20testar%20o%20Clippr%20na%20minha%20barbearia!"
+          target="_blank"
+          rel="noopener"
+          class="btn-gold"
+        >✂ Quero experimentar grátis</a>
+        <a href="#preview" class="btn-ghost">Ver como funciona</a>
+      </div>
+      <div class="hero-proof">
+        <div class="hero-proof-item">14 dias grátis</div>
+        <div class="hero-proof-divider"></div>
+        <div class="hero-proof-item">Sem cartão de crédito</div>
+        <div class="hero-proof-divider"></div>
+        <div class="hero-proof-item">Cancele quando quiser</div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Mock Window -->
+      <div class="mock-window">
+        <div class="mock-titlebar">
+          <div class="mock-dot mock-dot-r"></div>
+          <div class="mock-dot mock-dot-y"></div>
+          <div class="mock-dot mock-dot-g"></div>
+          <div class="mock-titlebar-label">clippr.com.br — Barbearia do João</div>
+        </div>
+        <div class="mock-inner">
+          <div class="mock-sidebar">
+            <div class="mock-si on">📊</div>
+            <div class="mock-si">📅</div>
+            <div class="mock-si">👥</div>
+            <div class="mock-si">💰</div>
+            <div class="mock-si">📈</div>
+          </div>
+          <div class="mock-body">
+            <div class="mock-greeting">Segunda-feira, 16 Mar ☀️ — Bom dia, João!</div>
+            <div class="mock-stats">
+              <div class="mock-stat">
+                <div class="mock-stat-n">12</div>
+                <div class="mock-stat-l">Agendamentos hoje</div>
+              </div>
+              <div class="mock-stat">
+                <div class="mock-stat-n gold">R$480</div>
+                <div class="mock-stat-l">Faturamento hoje</div>
+              </div>
+              <div class="mock-stat">
+                <div class="mock-stat-n">98%</div>
+                <div class="mock-stat-l">Confirmados</div>
+              </div>
+            </div>
+            <div class="mock-section-lbl">Próximos agendamentos</div>
+            <div class="mock-apt">
+              <div class="mock-apt-bar" style="background:var(--gold)"></div>
+              <div>
+                <div class="mock-apt-name">Ricardo Alves</div>
+                <div class="mock-apt-sub">14h00 · Corte + Barba</div>
+              </div>
+              <div class="mock-apt-badge b-green">Confirmado</div>
+            </div>
+            <div class="mock-apt">
+              <div class="mock-apt-bar" style="background:#8B6347"></div>
+              <div>
+                <div class="mock-apt-name">Felipe Costa</div>
+                <div class="mock-apt-sub">14h30 · Corte</div>
+              </div>
+              <div class="mock-apt-badge b-amber">Aguardando</div>
+            </div>
+            <div class="mock-apt">
+              <div class="mock-apt-bar" style="background:#4A7C59"></div>
+              <div>
+                <div class="mock-apt-name">Lucas Mendes</div>
+                <div class="mock-apt-sub">15h00 · Barba</div>
+              </div>
+              <div class="mock-apt-badge b-green">Confirmado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Badge flutuante -->
+      <div class="mock-float">
+        <div class="mock-float-label">Faturamento — março</div>
+        <div class="mock-float-val">R$6.840</div>
+        <div class="mock-float-sub">↑ 14% vs fevereiro</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FAIXA INTEGRAÇÕES ══ -->
+  <div class="logos-strip">
+    <div class="logos-strip-label">Funciona com</div>
+    <div class="logos-strip-divider"></div>
+    <div class="logos-strip-items">
+      <div class="logo-item">WhatsApp</div>
+      <div class="logo-item">PIX</div>
+      <div class="logo-item">Google Agenda</div>
+      <div class="logo-item">Mercado Pago</div>
+      <div class="logo-item">Qualquer celular</div>
+    </div>
+  </div>
+
+  <!-- ══ FUNCIONALIDADES ══ -->
+  <section class="section" id="funcionalidades">
+    <div class="reveal">
+      <div class="section-eyebrow">O que você ganha</div>
+      <h2>Tudo que sua barbearia<br>precisa, <em>finalmente</em> junto.</h2>
+      <p class="section-sub">
+        Esqueça o caderninho, o grupo de WhatsApp confuso e a planilha que ninguém entende. O Clippr centraliza tudo.
+      </p>
+    </div>
+
+    <div class="features-layout">
+      <!-- Lista de funcionalidades -->
+      <div class="features-list reveal">
+        <div class="feat-item" data-tab="agenda">
+          <div class="feat-icon-wrap"><span>📅</span></div>
+          <div>
+            <div class="feat-title">Agenda Inteligente</div>
+            <div class="feat-desc">Visualize todos os agendamentos do dia, semana ou mês. Evite horários duplicados e veja a agenda de cada barbeiro separado.</div>
+          </div>
+        </div>
+        <div class="feat-item" data-tab="clientes">
+          <div class="feat-icon-wrap"><span>👥</span></div>
+          <div>
+            <div class="feat-title">Cadastro de Clientes</div>
+            <div class="feat-desc">Histórico completo de cada cliente: quais serviços fez, quando veio pela última vez e qual o ticket médio dele.</div>
+          </div>
+        </div>
+        <div class="feat-item" data-tab="financeiro">
+          <div class="feat-icon-wrap"><span>💰</span></div>
+          <div>
+            <div class="feat-title">Financeiro e Caixa</div>
+            <div class="feat-desc">Registre entradas, saídas e formas de pagamento. Feche o caixa do dia em segundos e veja o lucro real da sua barbearia.</div>
+          </div>
+        </div>
+        <div class="feat-item" data-tab="insights">
+          <div class="feat-icon-wrap"><span>📊</span></div>
+          <div>
+            <div class="feat-title">Relatórios e Insights</div>
+            <div class="feat-desc">Descubra os serviços mais vendidos, os horários de pico, os clientes mais valiosos e tome decisões com dados reais.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preview interativo -->
+      <div class="feat-preview reveal">
+        <div class="feat-preview-tab">
+          <div class="fpt active" data-tab="agenda">📅 Agenda</div>
+          <div class="fpt" data-tab="clientes">👥 Clientes</div>
+          <div class="fpt" data-tab="financeiro">💰 Financeiro</div>
+          <div class="fpt" data-tab="insights">📊 Insights</div>
+        </div>
+        <div class="feat-preview-body" id="preview-content">
+
+          <!-- AGENDA -->
+          <div id="pv-agenda" class="pv-panel active">
+            <div class="pv-label">Hoje — 16 Mar</div>
+            <div class="pv-apt-list">
+              <div class="pv-apt">
+                <div class="pv-time">08h00</div>
+                <div class="pv-bar" style="background:var(--gold)"></div>
+                <div class="pv-info"><div class="pv-name">André Lima</div><div class="pv-svc">Corte — R$35</div></div>
+                <div class="pv-badge green">✓ Confirmado</div>
+              </div>
+              <div class="pv-apt">
+                <div class="pv-time">09h00</div>
+                <div class="pv-bar" style="background:#8B6347"></div>
+                <div class="pv-info"><div class="pv-name">Paulo Souza</div><div class="pv-svc">Corte + Barba — R$55</div></div>
+                <div class="pv-badge amber">Aguardando</div>
+              </div>
+              <div class="pv-apt">
+                <div class="pv-time">14h00</div>
+                <div class="pv-bar" style="background:#4A7C59"></div>
+                <div class="pv-info"><div class="pv-name">Ricardo Alves</div><div class="pv-svc">Barba — R$25</div></div>
+                <div class="pv-badge green">✓ Confirmado</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CLIENTES -->
+          <div id="pv-clientes" class="pv-panel">
+            <div class="pv-label">Clientes Recentes</div>
+            <table class="mini-table">
+              <thead>
+                <tr><th>Nome</th><th>Visitas</th><th>Ticket Médio</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Ricardo Alves</strong></td><td>28</td><td>R$58</td><td><span class="pv-badge green">Ativo</span></td></tr>
+                <tr><td><strong>Paulo Souza</strong></td><td>33</td><td>R$68</td><td><span class="pv-badge green">Ativo</span></td></tr>
+                <tr><td><strong>Lucas Mendes</strong></td><td>9</td><td>R$35</td><td><span class="pv-badge amber">Inativo</span></td></tr>
+                <tr><td><strong>Felipe Costa</strong></td><td>14</td><td>R$42</td><td><span class="pv-badge green">Ativo</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- FINANCEIRO -->
+          <div id="pv-financeiro" class="pv-panel">
+            <div class="pv-mini-stats">
+              <div class="pv-mini-stat"><div class="pv-mini-val gold">R$6.840</div><div class="pv-mini-lbl">Receita — Março</div></div>
+              <div class="pv-mini-stat"><div class="pv-mini-val">R$5.610</div><div class="pv-mini-lbl">Lucro líquido</div></div>
+            </div>
+            <div class="pv-label">Últimas entradas</div>
+            <div class="pv-lancamentos">
+              <div class="pv-lanc"><span>André Lima — Corte</span><span class="pos">+ R$35</span></div>
+              <div class="pv-lanc"><span>Paulo Souza — C+B</span><span class="pos">+ R$55</span></div>
+              <div class="pv-lanc"><span>Produto — Pomada</span><span class="neg">− R$120</span></div>
+            </div>
+          </div>
+
+          <!-- INSIGHTS -->
+          <div id="pv-insights" class="pv-panel">
+            <div class="pv-label">Serviços mais vendidos</div>
+            <div class="pv-ranking">
+              <div class="pv-rank-item">
+                <span class="pv-rank-num gold">1</span>
+                <span class="pv-rank-name">Corte + Barba</span>
+                <span class="pv-rank-val gold">48x</span>
+              </div>
+              <div class="pv-bar-full gold"></div>
+              <div class="pv-rank-item">
+                <span class="pv-rank-num">2</span>
+                <span class="pv-rank-name">Corte</span>
+                <span class="pv-rank-val">38x</span>
+              </div>
+              <div class="pv-bar-full" style="width:79%"></div>
+              <div class="pv-rank-item">
+                <span class="pv-rank-num">3</span>
+                <span class="pv-rank-name">Degradê</span>
+                <span class="pv-rank-val">15x</span>
+              </div>
+              <div class="pv-bar-full" style="width:31%"></div>
+            </div>
+            <div class="pv-tip">📌 Pico de movimento: <strong>14h–16h</strong> nas sextas e sábados.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PREVIEW DO PAINEL ══ -->
+  <section class="preview-section" id="preview">
+    <div class="reveal">
+      <div class="section-eyebrow gold">Como funciona</div>
+      <h2>Seu painel completo,<br>do jeito que você <em>merece.</em></h2>
+      <p class="section-sub muted">Uma visão geral de tudo que acontece na sua barbearia — em tempo real, de qualquer celular ou computador.</p>
+    </div>
+
+    <div class="preview-frame reveal">
+      <div class="preview-topbar">
+        <div class="ptb-dot ptb-dot-r"></div>
+        <div class="ptb-dot ptb-dot-y"></div>
+        <div class="ptb-dot ptb-dot-g"></div>
+        <div class="ptb-url">🔒 clippr.com.br/painel/barbearia-do-joao</div>
+      </div>
+      <div class="preview-dash">
+        <div class="preview-sidebar">
+          <div class="psb-logo">Clip<span>pr</span></div>
+          <div class="psb-item on">📊 Visão Geral</div>
+          <div class="psb-item">📅 Agenda</div>
+          <div class="psb-item">👥 Clientes</div>
+          <div class="psb-item">💰 Financeiro</div>
+          <div class="psb-item">📈 Insights</div>
+          <div class="psb-item">⚙️ Configurações</div>
+        </div>
+        <div class="preview-main">
+          <div class="prev-stat-row">
+            <div class="prev-stat">
+              <div class="prev-stat-val">12</div>
+              <div class="prev-stat-lbl">Agendamentos Hoje</div>
+              <div class="prev-stat-chg up">↑ 3 a mais que ontem</div>
+            </div>
+            <div class="prev-stat">
+              <div class="prev-stat-val gold">R$480</div>
+              <div class="prev-stat-lbl">Faturamento Hoje</div>
+              <div class="prev-stat-chg up">↑ 18% vs semana passada</div>
+            </div>
+            <div class="prev-stat">
+              <div class="prev-stat-val">134</div>
+              <div class="prev-stat-lbl">Clientes no Mês</div>
+              <div class="prev-stat-chg up">↑ 12 novos</div>
+            </div>
+            <div class="prev-stat">
+              <div class="prev-stat-val">R$62</div>
+              <div class="prev-stat-lbl">Ticket Médio</div>
+              <div class="prev-stat-chg dn">↓ R$4 vs mês passado</div>
+            </div>
+          </div>
+          <div class="prev-two">
+            <div class="prev-card">
+              <div class="prev-card-hdr">Agenda do dia</div>
+              <div class="prev-apt-item">
+                <div class="prev-apt-bar" style="background:var(--gold)"></div>
+                <div><div class="prev-apt-name">Ricardo Alves</div><div class="prev-apt-svc">14h00 · Corte + Barba</div></div>
+                <div class="prev-apt-badge confirmed">✓ Confirmado</div>
+              </div>
+              <div class="prev-apt-item">
+                <div class="prev-apt-bar" style="background:#8B6347"></div>
+                <div><div class="prev-apt-name">Felipe Costa</div><div class="prev-apt-svc">14h30 · Corte</div></div>
+                <div class="prev-apt-badge waiting">Aguardando</div>
+              </div>
+              <div class="prev-apt-item">
+                <div class="prev-apt-bar" style="background:#4A7C59"></div>
+                <div><div class="prev-apt-name">Lucas Mendes</div><div class="prev-apt-svc">15h00 · Barba</div></div>
+                <div class="prev-apt-badge confirmed">✓ Confirmado</div>
+              </div>
+            </div>
+            <div class="prev-card">
+              <div class="prev-card-hdr">Faturamento — 7 dias</div>
+              <div class="prev-chart-body">
+                <div class="prev-bars">
+                  <div class="pb-wrap"><div class="pb dim" style="height:45px"></div><div class="pb-lbl">Seg</div></div>
+                  <div class="pb-wrap"><div class="pb dim" style="height:62px"></div><div class="pb-lbl">Ter</div></div>
+                  <div class="pb-wrap"><div class="pb dim" style="height:55px"></div><div class="pb-lbl">Qua</div></div>
+                  <div class="pb-wrap"><div class="pb dim" style="height:75px"></div><div class="pb-lbl">Qui</div></div>
+                  <div class="pb-wrap"><div class="pb" style="height:80px"></div><div class="pb-lbl">Sex</div></div>
+                  <div class="pb-wrap"><div class="pb" style="height:80px"></div><div class="pb-lbl">Sáb</div></div>
+                  <div class="pb-wrap"><div class="pb" style="height:38px;opacity:.6"></div><div class="pb-lbl">Hoje</div></div>
+                </div>
+                <div class="prev-chart-footer">
+                  <span>Total 7 dias</span>
+                  <span class="prev-chart-total">R$3.240</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PLANOS ══ -->
+  <section class="section" id="planos">
+    <div class="reveal">
+      <div class="section-eyebrow">Planos</div>
+      <h2>Preço justo para cada<br>tamanho de <em>barbearia.</em></h2>
+      <p class="section-sub">Comece grátis, cresça no seu ritmo. Todos os planos incluem 14 dias de teste sem cartão de crédito.</p>
+    </div>
+
+    <div class="pricing-grid reveal">
+
+      <!-- BÁSICO -->
+      <div class="price-card">
+        <div class="price-tier">Básico</div>
+        <div class="price-amount"><span class="price-currency">R$</span>49</div>
+        <div class="price-period">por mês · cobrado mensalmente</div>
+        <hr class="price-divider" />
+        <ul class="price-features">
+          <li><span class="check">✓</span> Até 150 agendamentos/mês</li>
+          <li><span class="check">✓</span> Cadastro de clientes</li>
+          <li><span class="check">✓</span> Controle financeiro básico</li>
+          <li><span class="check">✓</span> 1 barbeiro cadastrado</li>
+          <li><span class="cross">✗</span> Relatórios e insights</li>
+          <li><span class="cross">✗</span> Múltiplos barbeiros</li>
+        </ul>
+        <a href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20plano%20B%C3%A1sico%20do%20Clippr!" target="_blank" rel="noopener" class="btn-price">Começar grátis →</a>
+      </div>
+
+      <!-- PRO -->
+      <div class="price-card featured">
+        <div class="price-badge">Mais escolhido</div>
+        <div class="price-tier">Pro</div>
+        <div class="price-amount"><span class="price-currency">R$</span>99</div>
+        <div class="price-period">por mês · cobrado mensalmente</div>
+        <hr class="price-divider" />
+        <ul class="price-features">
+          <li><span class="check">✓</span> Agendamentos ilimitados</li>
+          <li><span class="check">✓</span> Cadastro completo + histórico</li>
+          <li><span class="check">✓</span> Financeiro completo + caixa</li>
+          <li><span class="check">✓</span> Até 5 barbeiros cadastrados</li>
+          <li><span class="check">✓</span> Relatórios e insights avançados</li>
+          <li><span class="check">✓</span> Suporte via WhatsApp</li>
+        </ul>
+        <a href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20plano%20Pro%20do%20Clippr!" target="_blank" rel="noopener" class="btn-price featured-btn">Experimentar grátis 14 dias →</a>
+      </div>
+
+      <!-- EMPRESARIAL -->
+      <div class="price-card">
+        <div class="price-tier">Empresarial</div>
+        <div class="price-amount"><span class="price-currency">R$</span>199</div>
+        <div class="price-period">por mês · cobrado mensalmente</div>
+        <hr class="price-divider" />
+        <ul class="price-features">
+          <li><span class="check">✓</span> Tudo do plano Pro</li>
+          <li><span class="check">✓</span> Múltiplas unidades</li>
+          <li><span class="check">✓</span> Barbeiros ilimitados</li>
+          <li><span class="check">✓</span> Relatórios por unidade</li>
+          <li><span class="check">✓</span> Suporte prioritário</li>
+          <li><span class="check">✓</span> Onboarding personalizado</li>
+        </ul>
+        <a href="https://wa.me/5511999999999?text=Quero%20saber%20mais%20sobre%20o%20plano%20Empresarial%20do%20Clippr!" target="_blank" rel="noopener" class="btn-price">Falar com a equipe →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ FAQ ══ -->
+  <section class="section section-alt" id="faq">
+    <div class="reveal">
+      <div class="section-eyebrow">Dúvidas frequentes</div>
+      <h2>Ainda tem dúvidas?<br><em>A gente responde.</em></h2>
+    </div>
+
+    <div class="faq-grid reveal">
+      <div class="faq-item open">
+        <button class="faq-question" aria-expanded="true">
+          Preciso instalar alguma coisa?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-answer">Não! O Clippr funciona direto no navegador — no celular, tablet ou computador. Sem download, sem instalação. É só acessar, criar sua conta e começar a usar.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Como funciona o período de teste grátis?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-answer">Você tem 14 dias para testar tudo do plano Pro completamente de graça, sem precisar informar cartão de crédito. Só cobra se você decidir continuar depois.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Meus dados ficam seguros?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-answer">Sim. Todos os dados da sua barbearia são salvos com segurança na nuvem, com backup automático diário. Só você tem acesso ao seu painel.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Posso cancelar quando quiser?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-answer">Sim, sem burocracia. Você pode cancelar sua assinatura a qualquer momento direto pelo painel ou pelo WhatsApp. Sem taxas de cancelamento, sem fidelidade.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Tenho suporte se precisar de ajuda?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-answer">Com certeza! Todos os planos têm suporte pelo WhatsApp. No plano Empresarial o suporte é prioritário, com tempo de resposta garantido.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Funciona para barbearia com mais de um barbeiro?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-answer">Sim! No plano Pro você cadastra até 5 barbeiros, cada um com sua própria agenda. No plano Empresarial não tem limite de profissionais, e você ainda pode gerenciar múltiplas unidades.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA FINAL ══ -->
+  <section class="final-cta">
+    <div class="final-cta-inner reveal">
+      <h2>Pronto pra organizar<br>sua <em>barbearia?</em></h2>
+      <p>Junte-se aos barbeiros que já trocaram o caderninho pelo Clippr. 14 dias grátis, sem cartão.</p>
+      <div class="final-cta-actions">
+        <a href="https://wa.me/5511999999999?text=Quero%20come%C3%A7ar%20a%20usar%20o%20Clippr%20na%20minha%20barbearia!" target="_blank" rel="noopener" class="btn-gold large">💬 Quero começar agora</a>
+        <a href="#planos" class="btn-ghost dark">Ver os planos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Clip<span>pr</span></div>
+      <div class="footer-copy">© 2025 Clippr. Feito com ✂ para barbearias brasileiras.</div>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/features.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/reveal.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+/* ══════════════════════════════════════
+   hero.css — Clippr
+   Seção hero com split diagonal,
+   mock window e badge flutuante
+══════════════════════════════════════ */
+
+.hero {
+  min-height: 96vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fundo diagonal na metade direita */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 52%;
+  background: var(--sand);
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+}
+
+/* ── Lado esquerdo ── */
+.hero-left {
+  position: relative;
+  z-index: 1;
+  padding: 80px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+.hero-eyebrow-line {
+  width: 32px;
+  height: 1.5px;
+  background: var(--gold);
+}
+
+.hero-sub {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.72;
+  color: var(--slate);
+  max-width: 440px;
+  margin-bottom: 48px;
+}
+
+/* Palavra com sublinhado dourado */
+.underline-word {
+  position: relative;
+  white-space: nowrap;
+}
+.underline-word::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  right: 0;
+  height: 3px;
+  background: var(--gold-lt);
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-proof {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.hero-proof-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--slate);
+}
+.hero-proof-item::before {
+  content: '✓';
+  color: var(--gold);
+  font-size: 14px;
+}
+.hero-proof-divider {
+  width: 1px;
+  height: 18px;
+  background: var(--mist);
+}
+
+/* ── Lado direito ── */
+.hero-right {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 48px 60px 24px;
+}
+
+/* ── Mock Window ── */
+.mock-window {
+  width: 100%;
+  max-width: 460px;
+  background: var(--white);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--mist);
+  overflow: hidden;
+}
+
+.mock-titlebar {
+  background: var(--ink);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mock-dot { width: 10px; height: 10px; border-radius: 50%; }
+.mock-dot-r { background: #FF5F57; }
+.mock-dot-y { background: #FFBD2E; }
+.mock-dot-g { background: #28C840; }
+.mock-titlebar-label {
+  margin: 0 auto;
+  font-size: 11px;
+  color: rgba(255,255,255,.4);
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.mock-inner { display: flex; }
+
+.mock-sidebar {
+  width: 52px;
+  background: #1A1612;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 0;
+  gap: 22px;
+}
+.mock-si { font-size: 16px; opacity: .35; }
+.mock-si.on { opacity: 1; }
+
+.mock-body { flex: 1; padding: 20px; }
+.mock-greeting {
+  font-size: 11px;
+  color: var(--slate);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.mock-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.mock-stat {
+  background: var(--sand);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.mock-stat-n {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--ink);
+}
+.mock-stat-n.gold { color: var(--gold); }
+.mock-stat-l {
+  font-size: 9px;
+  color: var(--slate);
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+.mock-section-lbl {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 8px;
+}
+
+.mock-apt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  background: var(--sand);
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+.mock-apt:last-child { margin-bottom: 0; }
+.mock-apt-bar {
+  width: 3px;
+  height: 30px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.mock-apt-name { font-size: 11px; font-weight: 700; }
+.mock-apt-sub { font-size: 9px; color: var(--slate); margin-top: 2px; }
+.mock-apt-badge {
+  margin-left: auto;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--r-full);
+  white-space: nowrap;
+}
+.mock-apt-badge.b-green { background: var(--color-success-bg); color: var(--color-success); }
+.mock-apt-badge.b-amber { background: var(--color-warning-bg); color: var(--color-warning); }
+
+/* ── Badge flutuante ── */
+.mock-float {
+  position: absolute;
+  bottom: 48px;
+  left: 24px;
+  background: var(--white);
+  border-radius: var(--r-md);
+  padding: 12px 16px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--mist);
+}
+.mock-float-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+.mock-float-val {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--gold);
+  margin-top: 2px;
+}
+.mock-float-sub {
+  font-size: 10px;
+  color: var(--slate);
+}

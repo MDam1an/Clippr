@@ -1,0 +1,30 @@
+/* ══════════════════════════════════════
+   whatsapp.css — Clippr
+   Botão flutuante do WhatsApp
+══════════════════════════════════════ */
+
+.wa-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 200;
+  background: #25D366;
+  color: var(--white);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 6px 28px rgba(37,211,102,.5);
+  text-decoration: none;
+  transition: transform var(--transition-base);
+  animation: wa-pulse 2.5s ease-in-out infinite;
+}
+.wa-float:hover { transform: scale(1.1); }
+
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 6px 28px rgba(37,211,102,.5); }
+  50%       { box-shadow: 0 6px 48px rgba(37,211,102,.8); }
+}

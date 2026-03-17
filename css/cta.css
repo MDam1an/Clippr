@@ -1,0 +1,38 @@
+/* ══════════════════════════════════════
+   cta.css — CTA final
+══════════════════════════════════════ */
+
+.final-cta {
+  background: var(--ink);
+  padding: 120px 64px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: '✂';
+  position: absolute;
+  font-size: 600px;
+  opacity: .025;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  color: var(--white);
+  pointer-events: none;
+  line-height: 1;
+}
+.final-cta h2 { color: var(--white); margin-bottom: 20px; }
+.final-cta p {
+  font-size: 17px;
+  color: rgba(255,255,255,.45);
+  max-width: 480px;
+  margin: 0 auto 52px;
+  line-height: 1.7;
+}
+.final-cta-inner { position: relative; z-index: 1; }
+.final-cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

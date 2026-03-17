@@ -1,0 +1,54 @@
+/* ══════════════════════════════════════
+   variables.css — Clippr
+   Tokens de design: cores, espaçamentos,
+   tipografia, sombras e bordas
+══════════════════════════════════════ */
+
+:root {
+  /* ── Paleta de cores ── */
+  --ink:          #0F0D0B;
+  --ink-soft:     #2C2620;
+  --gold:         #C8922A;
+  --gold-lt:      #F5DFA8;
+  --gold-pale:    #FBF4E6;
+  --sand:         #F0EAE0;
+  --parchment:    #FAF7F2;
+  --mist:         #E8E2D8;
+  --slate:        #7A6F64;
+  --white:        #FFFFFF;
+
+  /* ── Cores semânticas ── */
+  --color-success:      #3D6B4F;
+  --color-success-bg:   #D6EDE0;
+  --color-warning:      #7A4E10;
+  --color-warning-bg:   #F5DFA8;
+  --color-danger:       #C44A3A;
+
+  /* ── Tipografia ── */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Syne', system-ui, sans-serif;
+
+  /* ── Border radius ── */
+  --r-xs:  4px;
+  --r-sm:  6px;
+  --r-md:  12px;
+  --r-lg:  20px;
+  --r-xl:  28px;
+  --r-full: 9999px;
+
+  /* ── Sombras ── */
+  --shadow-sm: 0 2px 12px rgba(15,13,11,.07);
+  --shadow-md: 0 8px 40px rgba(15,13,11,.12);
+  --shadow-lg: 0 24px 80px rgba(15,13,11,.18);
+  --shadow-xl: 0 40px 120px rgba(0,0,0,.25);
+
+  /* ── Espaçamento de seção ── */
+  --section-pad-y: 110px;
+  --section-pad-x: 64px;
+
+  /* ── Transições ── */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --transition-fast:   .18s var(--ease-out);
+  --transition-base:   .25s var(--ease-out);
+  --transition-slow:   .4s  var(--ease-out);
+}

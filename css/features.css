@@ -1,0 +1,193 @@
+/* ══════════════════════════════════════
+   features.css — Clippr
+   Seção de funcionalidades: lista +
+   painel de preview interativo com abas
+══════════════════════════════════════ */
+
+.features-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* ── Lista de features ── */
+.features-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.feat-item {
+  display: flex;
+  gap: 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--mist);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+.feat-item:first-child { border-top: 1px solid var(--mist); }
+.feat-item:hover .feat-icon-wrap { background: var(--gold); }
+
+.feat-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--r-sm);
+  background: var(--gold-pale);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: background var(--transition-fast);
+}
+
+.feat-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.feat-desc {
+  font-size: 13px;
+  color: var(--slate);
+  line-height: 1.65;
+}
+
+/* ── Painel de preview ── */
+.feat-preview {
+  background: var(--white);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--mist);
+  overflow: hidden;
+  position: sticky;
+  top: 90px;
+}
+
+/* Abas */
+.feat-preview-tab {
+  display: flex;
+  background: var(--sand);
+  border-bottom: 1px solid var(--mist);
+  overflow-x: auto;
+}
+.fpt {
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--slate);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.fpt.active {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+  background: var(--white);
+}
+
+/* Painéis de conteúdo */
+.feat-preview-body { padding: 24px; }
+
+.pv-panel { display: none; }
+.pv-panel.active { display: block; }
+
+.pv-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 12px;
+}
+
+/* Agenda preview */
+.pv-apt-list { display: flex; flex-direction: column; gap: 8px; }
+.pv-apt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: var(--sand);
+  border-radius: 8px;
+}
+.pv-time {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--slate);
+  width: 40px;
+  flex-shrink: 0;
+}
+.pv-bar {
+  width: 3px;
+  height: 32px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.pv-info { flex: 1; }
+.pv-name { font-size: 12px; font-weight: 700; }
+.pv-svc { font-size: 10px; color: var(--slate); margin-top: 2px; }
+
+/* Financeiro preview */
+.pv-mini-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.pv-mini-stat {
+  background: var(--sand);
+  border-radius: 8px;
+  padding: 14px;
+}
+.pv-mini-val {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 900;
+}
+.pv-mini-val.gold { color: var(--gold); }
+.pv-mini-lbl { font-size: 10px; color: var(--slate); margin-top: 2px; }
+
+.pv-lancamentos { display: flex; flex-direction: column; gap: 6px; }
+.pv-lanc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: var(--sand);
+  border-radius: 6px;
+  font-size: 12px;
+}
+.pv-lanc .pos { font-weight: 800; color: var(--color-success); }
+.pv-lanc .neg { font-weight: 800; color: var(--color-danger); }
+
+/* Insights preview */
+.pv-ranking { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.pv-rank-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pv-rank-num { font-size: 11px; font-weight: 700; width: 12px; color: var(--slate); }
+.pv-rank-num.gold { color: var(--gold); }
+.pv-rank-name { flex: 1; font-size: 12px; font-weight: 700; }
+.pv-rank-val { font-size: 12px; font-weight: 700; color: var(--slate); }
+.pv-rank-val.gold { color: var(--gold); }
+.pv-bar-full {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--mist);
+  width: 100%;
+}
+.pv-bar-full.gold { background: var(--gold); }
+
+.pv-tip {
+  font-size: 10px;
+  color: var(--slate);
+  background: var(--gold-pale);
+  padding: 10px 12px;
+  border-radius: 6px;
+  border-left: 3px solid var(--gold);
+  line-height: 1.5;
+}
